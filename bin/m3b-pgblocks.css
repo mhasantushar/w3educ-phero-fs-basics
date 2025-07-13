@@ -1,0 +1,16 @@
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right:20px;
+    padding: 5px;
+}
+nav li:hover{
+    font-weight: bold; 
+    background-color: cornflowerblue;
+}
+nav li a{
+    text-decoration: none;
+}
+nav li a:hover{
+    color:yellow;
+}

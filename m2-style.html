@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+
+    
+    <style>
+        /* *{
+            color:red;
+            margin:0;
+            padding:0;
+        } */
+
+        h1{
+            /* elemment selector */
+            color:cornsilk;
+            padding:5px;
+            margin:0px;
+            background-color:darkslategray;
+        }
+        h3{
+            /* element selector */
+            color:goldenrod;
+            border: 2px outset;
+            padding: 5px;
+            background-color: linen;
+            width:75%;
+            text-align: center;
+        }
+
+        p{
+            /* element selector */
+            color:forestgreen;
+        }
+
+        a, li{
+            font-variant-caps:unicase;
+            text-decoration: none;
+        }
+
+        input[type="password"]{
+            color:sienna;
+            background-color: plum;
+        }
+
+        #author{
+            /* id selector */
+            color:blueviolet;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-variant: small-caps;
+            font-size: medium;
+            font-weight: bolder;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #authtag{
+            color:darkslateblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: smaller;
+            font-weight: bold;
+            padding: 0px;
+            margin: 0px;
+            margin-bottom: 40px;  
+        }
+
+        .male{
+            /* class selector */
+            color:steelblue;
+        }
+
+        .female{
+            /* class selector */
+            color:salmon
+        }
+
+        .married{
+            /* class selector */
+            color:blueviolet;
+        }
+
+        .term{
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: overline
+        }
+
+        .blog{
+            color:goldenrod;
+            background-color:cornsilk;
+            border: 10px outset goldenrod;
+            border-radius:25px;
+            padding:10px 20px;
+            margin:10px 0px;
+            /* box-shadow: 20px 20px; */
+        }
+
+        .revoke{
+            display:none;
+            /* visibility: hidden; */
+        }
+
+        .header{
+            height:200px;
+            background-color: darkkhaki;
+            background-image: url("images/html-css.png");
+            background-size: 200px;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+
+        .footer{
+            margin-top: 10px;
+            line-height: 0px;
+            font-size: smaller;
+        }
+        
+        /* *{
+            color:red;
+            margin:0;
+            padding:0;
+        } */
+    </style>
+</head>
+
+
+<body>
+    <header class="header">
+        <h1>CSS: Cascading Styling Sheet</h1>
+        <p id="author">Mahamudul Hasan</p>
+        <p id="authtag">Someone with the third eye!</p>
+    </header>
+
+    <h3>3 ways to write CSS</h3>
+    <ul>
+        <li>Inline CSS</li>
+        <li>Internal/Embedded</li>
+        <li>External CSS</li>
+    </ul>
+
+    <p style="background-color: burlywood; color: honeydew; padding: 5px; ">This is an example of Inline CSS</p>
+
+    <p>This is an example of <span class="term">Internal</span> or <span class="term">Embedded CSS</span> that works on p tag defined in head section.</p>
+
+    <h3>Types of CSS Selectors</h3>
+        
+    <ul>
+        <li>Class selector</li>
+        <li>Id selector</li>
+        <li>Universal selector</li>
+        <li>Element selector</li>
+        <li>Attribute selector</li>
+        <li>Group selector</li>
+    </ul>
+
+    <p>Example of class selector:</p>
+    <ol>
+        <li class="male">Mr A</li>
+        <li class="male">Mr B</li>
+        <li class="female">Ms C</li>
+        <li class="male">Mr D</li>
+        <li class="female married">Mrs E</li>
+        <li class="female">Miss F</li>
+        <li class="male">Mr G</li>
+    </ol>
+
+    <h3>Playing with Border, Margin, Padding</h3>
+
+    <div class="blog">
+        <h4>My Blog Post #1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus at hic temporibus cum eligendi, corporis officiis quos, aut voluptas quibusdam excepturi. Velit molestiae quis modi obcaecati, mollitia earum animi provident, nisi sint incidunt omnis ad optio fuga error deleniti aperiam temporibus impedit, officiis aliquam? Quos quisquam aliquam possimus fugiat.</p>
+    </div>
+    <div class="blog">
+        <h4>My Blog Post #2</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus at hic temporibus cum eligendi, corporis officiis quos, aut voluptas quibusdam excepturi. Velit molestiae quis modi obcaecati, mollitia earum animi provident, nisi sint incidunt omnis ad optio fuga error deleniti aperiam temporibus impedit, officiis aliquam? Quos quisquam aliquam possimus fugiat.</p>
+    </div>
+    <div class="blog revoke">
+        <h4>My Blog Post #3</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus at hic temporibus cum eligendi, corporis officiis quos, aut voluptas quibusdam excepturi. Velit molestiae quis modi obcaecati, mollitia earum animi provident, nisi sint incidunt omnis ad optio fuga error deleniti aperiam temporibus impedit, officiis aliquam? Quos quisquam aliquam possimus fugiat.</p>
+    </div>
+    <div class="blog">
+        <h4>My Blog Post #4</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus at hic temporibus cum eligendi, corporis officiis quos, aut voluptas quibusdam excepturi. Velit molestiae quis modi obcaecati, mollitia earum animi provident, nisi sint incidunt omnis ad optio fuga error deleniti aperiam temporibus impedit, officiis aliquam? Quos quisquam aliquam possimus fugiat.</p>
+    </div>
+
+    <h3>Contact me</h3>
+
+    <div>
+        <input type="text" placeholder="Your full name">
+        <input type="password" placeholder="Your pass code">
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <br>
+            <p>All right reserved</p>
+            <p>Mahamudul Hasan</p>
+            <p>mahamudulhasan@msn.com</p>
+        </div>
+    </footer>
+</body>
+</html>

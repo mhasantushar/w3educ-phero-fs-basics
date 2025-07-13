@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-4 HTML Table: Table, tr, th, td, caption, colspan, thead, tbody, tfoot</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid brown;
+            padding: 10px 20px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="bin/m4g-navbar.css">
+</head>
+
+
+<body>
+    <h1>4-4 HTML Table: Table, tr, th, td, caption, colspan, thead, tbody, tfoot</h1>
+    
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/m4a-audvid.html">Audio-video</a></li>
+                    <li><a href="/m4b-pgblocks.html">Page blocks</a></li>
+                    <li><a href="/m4c-form.html">Forms</a></li>
+                    <li><a href="/m4d-table.html">Tables</a></li>
+                    <li><a href="/m4e-flex.html">Flex</a></li>
+                    <li><a href="/m4f-flexcenter.html">Flex-center</a></li>
+                    <li><a href="/m4g-navbar.html">Navigation</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <table>
+            <Caption>My Friend List</Caption>
+            <thead>
+                <tr>
+                    <th>Num</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mukta</td>
+                    <td>Sharma</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Amit</td>
+                    <td>Saha</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Arun</td>
+                    <td>Lal</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="3">Total Friends: 4</td>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>

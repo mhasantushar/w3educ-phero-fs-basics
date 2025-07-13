@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: HTML5 Homework</title>
+
+    <style>
+        main {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .task1 {
+            width: 400px;
+            padding: 5px;
+            border: 1px solid gray;
+            box-shadow: -2px 2px 2px gray;
+        }
+
+        .task1 textarea {
+            width: 300px;
+            height: 50px;
+        }
+
+        .task1 input[type="submit"] {
+            margin: 5px 0;
+        }
+
+        task2 label,
+        textarea {
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse;
+            /* width: 75%; */
+        }
+
+        th,
+        td {
+            border: 5px ridge;
+            padding: 10px 10px;
+        }
+
+        .col {
+            width: 200px;
+        }
+
+        .team-area {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .team {
+            border: 1px solid cornflowerblue;
+            width: 150px;
+            border-radius: 10px;
+            color: darkolivegreen;
+        }
+
+        .team img {
+            /* margin 5px 5px; */
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .team h4 {
+            margin: 5px 5px;
+        }
+
+        .team h5 {
+            margin: 5px 5px;
+        }
+
+        .team p {
+            margin: 5px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Task 1</h2>
+
+            <div class="task1">
+                <hr>
+                <label for="fld-src-tmage">Search your image here</label>
+                <input type="search" name="fld-src-tmage" id="fld-src-tmage" placeholder="Kung Fu Panda">
+                <button>Search</button>
+                <br>
+                <img src="./images/kungfu-panda.jpeg" alt="Kung Fu Panda" width="200px">
+                <br>
+                <a href="https://google.com">For more click here</a>
+                <hr>
+
+                <h4>Feedback Form</h4>
+                <form action="">
+                    <label for="frm-name">Name:</label><br>
+                    <input type="text" name="" id="frm-name" required><br>
+                    <label for="frm-date">Date:</label><br>
+                    <input type="date" name="" id="frm-date"><br>
+                    <label for="frm-comment">Comment:</label><br>
+                    <textarea name="" id="frm-comment"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h2>Task 2</h2>
+
+            <div class="task2">
+                <form action="">
+                    <label for="frm-story">What is your story?</label>
+                    <textarea name="" id="frm-story" rows="5" cols="80"></textarea><br>
+                    <label for="frm-assess">Assessment:</label>
+                    <select name="" id="frm-assess">
+                        <option value="none"></option>
+                        <option value="bad">Bad</option>
+                        <option value="good">Good</option>
+                        <option value="great">Great</option>
+                        <option value="excel">Excellent</option>
+                    </select><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h2>Task 3: Table Tennis Tournament</h2>
+
+            <table>
+                <caption>Tournament Schedule and Results</caption>
+                <thead>
+                    <th class="col">Round 1</th>
+                    <th class="col">Player A</th>
+                    <th class="col">Player B</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Match 1</td>
+                        <td>John</td>
+                        <td>Alice</td>
+                    </tr>
+                    <tr>
+                        <td>Match 2</td>
+                        <td>Mark</td>
+                        <td>Sarah</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <th class="col">Round 2</th>
+                    <th class="col">Player C</th>
+                    <th class="col">Player D</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Match 3</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>Match 4</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <th class="col">Final</th>
+                    <th class="col">Winner of Match 3</th>
+                    <th class="col">Winner of Match 4</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Champion</td>
+                        <td>TBD</td>
+                        <td>TBD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Task 4: Meet Our Team</h2>
+
+            <div class="team-area">
+                <div class="team">
+                    <img src="./images/avatar.png" alt="">
+                    <h4>Alex Johnson</h4>
+                    <h5>Front-end Developer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis maiores. Vitae odio excepturi
+                        officia!</p>
+                </div>
+
+                <div class="team">
+                    <img src="./images/avatar.png" alt="">
+                    <h4>Alex Johnson</h4>
+                    <h5>Front-end Developer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis maiores. Vitae odio excepturi
+                        officia!</p>
+                </div>
+
+                <div class="team">
+                    <img src="./images/avatar.png" alt="">
+                    <h4>Alex Johnson</h4>
+                    <h5>Front-end Developer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis maiores. Vitae odio excepturi
+                        officia!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

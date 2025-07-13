@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.5-3 stack elements z-index and pseudo element</title>
+
+    <style>
+        .box {
+            position: relative;
+        }
+
+        .boy {
+            left: 20px;;
+        }
+        
+        .ring {
+            top: -70px;
+            left: 10px;
+            z-index: -1;
+        }
+
+        .water {
+            top: -160px;
+            z-index: -2;
+        }
+
+
+        h4::after {
+            content: ".pdf";
+            font-size: 10px;
+            color: red;
+            background-color: yellow;
+        }
+        h4::before {
+            content: "start ";
+            font-size: 10px;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: aqua;
+            font-weight: bold;
+        }
+        p::first-line {
+            background-color:antiquewhite
+        }
+        /* P::selection {
+            color:blueviolet;
+            background-color:cornflowerblue;
+        } */
+        input::placeholder {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+     <h3>z-index</h3>
+
+    <div class="swim-container">
+        <div class="box boy">
+            <img src="./swim/boy.svg" alt="">
+        </div>
+        <div class="box ring">
+            <img src="./swim/ring.svg" alt="">
+        </div>
+        <div class="box water">
+            <img src="./swim/water.svg" alt="">
+        </div>
+    </div>
+
+    <h3>Pseudo Elements</h3>
+    
+    <h4>Heading - 1</h4>
+    <h4>Heading - 2</h4>
+    <h4>Heading - 3</h4>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit nemo quia hic neque ex libero quasi non facilis provident unde!</p>
+
+    <p>Dolores nihil magnam inventore at accusantium odit dolor ut aperiam. Vitae itaque alias voluptatum quidem similique obcaecati voluptates, in cumque!</p>
+    
+    <p>Distinctio aperiam provident suscipit similique quaerat, dignissimos, in sapiente fugiat accusamus natus alias deleniti, nostrum consequatur labore. Repudiandae, laboriosam officiis?</p>
+
+    <input type="text" name="" id="" placeholder="Your Name">
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-1 HTML5 vs HTML, Audio, video, youtube video, embed iframe" tag</title>
+
+    <link rel="stylesheet" href="bin/m4g-navbar.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/m4a-audvid.html">Audio-video</a></li>
+                <li><a href="/m4b-pgblocks.html">Page blocks</a></li>
+                <li><a href="/m4c-form.html">Forms</a></li>
+                <li><a href="/m4d-table.html">Tables</a></li>
+                <li><a href="/m4e-flex.html">Flex</a></li>
+                <li><a href="/m4f-flexcenter.html">Flex-center</a></li>
+                <li><a href="/m4g-navbar.html">Navigation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>4-1 HTML5 vs HTML, Audio, video, youtube video, embed iframe</h1>
+    <figure>
+        <audio controls src="/media/t-rex-growl-324746.mp3">
+        </audio>
+        <Figcaption>Caption: T-rex Growling</Figcaption>
+    </figure>
+    <br>
+    <figure>
+        <video controls src="media/34596-402634201_tiny.mp4" width="400"></video>
+        <figcaption>Caption: Seagull</figcaption>
+    </figure>
+    <br>
+    <!-- YouTube Video -->
+    <figure>
+        <!-- <video controls src="https://youtu.be/0TI6ceqKxpQ?si=X-eihJqqTGy2Y1rg"></video> -->
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/V3ABL8iOS6I?si=JvUFbCsbcf3-bzKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figcaption>Caption: YouTube video inside iframe</figcaption>
+    </figure>
+    <br>
+    <!-- Using <Source> tag -->
+
+    <figure>
+        <video width="400px">
+            <source src="media/273883_small.mp4" type="video/mp4">
+            Your browser doesn't support playing videos. <a href="/media/273883_small.mp4">Download</a> the file instead.
+        </video>
+        <figcaption>Caption: Flowers</figcaption>
+    </figure>
+</body>
+</html>
