@@ -9,18 +9,29 @@
     <style>
         nav {
             display: flex;
-            gap: 50x;   /* not working probably since these are not li items */
             justify-content: space-between;
         }
-
         nav a {
             text-decoration: none;
             color: red;
         }
 
+        .login-form-container {
+            display: flex;
+            justify-content: center;
+            /* border: 1px dotted tomato; */
+            height: 90vh;
+            align-items: center;
+        }
         .login-form {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            /* border: 1px solid blueviolet; */
+            width: 50%;
+        }
+        .login-form input {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -36,13 +47,15 @@
         <a href="">Login</a>
     </nav>
 
-    <form action="" class="login-form">
-        <h3>Please login</h3>
+    <section class="login-form-container">
+        <form class="login-form" action="">
+            <h3>Please login</h3>
 
-        <input type="email" name="" id="" placeholder="Your Email" required>
-        <input type="password" name="" id="" placeholder="Your Password" required>
-        <input type="submit" value="Log in">
-    </form>
+            <input type="email" name="" id="" placeholder="Your Email" required>
+            <input type="password" name="" id="" placeholder="Your Password" required>
+            <input type="submit" value="Log in">
+        </form>
+    </section>
 </body>
 
 </html>
