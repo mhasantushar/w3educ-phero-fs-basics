@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-8 Seven things you need to do to make a website responsive</title>
+
+    <style>
+        body {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .img-wrapper {
+            display: flex;
+        }
+        .img-wrapper img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .img-wrapper {
+                flex-direction:column;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="img-wrapper">
+        <div><img src="./images/kebab_naan.png" alt=""></div>
+        <div><img src="./images/mutton_biriani.png" alt=""></div>
+    </div>
+</body>
+</html>

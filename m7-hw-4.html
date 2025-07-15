@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7-HW4</title>
+
+    <style>
+        .food {
+            display: flex;
+            gap: 20px;
+        }
+
+        .food img {
+            height: 250px;
+            width: 250px;
+        }
+
+        .food h3 p img button {
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .food {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="food">
+                <div>
+                    <img src="./images/kebab_naan.png" alt="Kebab and Naan">
+                </div>
+                <div>
+                    <h3>Kebab and Naan</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit inventore
+                        aspernatur
+                        nisi, ab aperiam nobis reprehenderit libero id modi cupiditate rem, temporibus, maxime
+                        consequuntur!
+                        Provident unde quisquam ducimus aliquam. Minima!</p>
+                    <button>Read More</button>
+                </div>
+
+            </div>
+            <div class="food">
+                <div>
+                    <img src="./images/mutton_biriani.png" alt="Kebab and Naan">
+                </div>
+                <div>
+                    <h3>Mutton Biriani</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas accusamus
+                        doloribus architecto nemo perspiciatis magni ullam non, modi, beatae facere quidem delectus
+                        adipisci
+                        error officia alias, consectetur qui laboriosam ratione.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

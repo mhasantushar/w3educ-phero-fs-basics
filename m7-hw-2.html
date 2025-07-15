@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7-HW2</title>
+
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-areas:
+                "box1 box2 box2"
+                "box1 box3 box4";
+            gap: 5px;
+        }
+
+        .box1 {
+            color: white;
+            background-color: tomato;
+            grid-area: box1;
+            height: 215px;
+            padding: 5px;
+        }
+
+        .box2 {
+            color: white;
+            background-color: orange;
+            grid-area: box2;
+            height: 100px;
+            padding: 5px;
+        }
+
+        .box3 {
+            color: white;
+            background-color: darkorchid;
+            grid-area: box3;
+            height: 100px;
+            padding: 5px;
+        }
+
+        .box4 {
+            color: white;
+            background-color: darkgreen;
+            grid-area: box4;
+            height: 100px;
+            padding: 5px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .wrapper {
+                grid-template-areas:
+                    "box1" 
+                    "box2"
+                    "box3"
+                    "box4";
+                ;
+                .box1 {
+                    height: 100px;
+                }
+                .box4 {
+                    height: 50px;
+                }
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="box1">Item 1</div>
+            <div class="box2">Item 2</div>
+            <div class="box3">Item 3</div>
+            <div class="box4">Item 4</div>
+        </div>
+    </main>
+</body>
+
+</html>
