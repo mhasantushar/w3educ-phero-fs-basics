@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7-HW5</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            /* width: 1000px; */
+            margin 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .food {
+            /* border: 2px solid tomato; */
+            display: grid;
+            grid-template-columns: 280px auto;
+            align-items:top;
+        }
+        .food-img img {
+            width: 280px;
+            height: 260px;
+            text-align: left;
+        }
+
+        .food-desc {
+            text-align: left;
+            background-color: burlywood;
+            width: 250px;
+            height: 250px;
+            padding: 5px 15px;
+        }
+
+        .food.reverse {
+            direction: rtl;
+        }
+
+        .food.reverse > * {
+            direction: ltr;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="food">
+                <div class="food-img">
+                    <img src="./images/kebab_naan.png" alt="Kebab and Naan">
+                </div>
+                <div class="food-desc">
+                    <h3>Kebab and Naan</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, voluptate adipisci
+                        pariatur, aliquam placeat cumque dolor inventore soluta natus quisquam assumenda quae earum
+                        ratione velit vel culpa praesentium, nemo eligendi.</p>
+                </div>
+            </div>
+            <div class="food reverse">
+                <div class="food-img">
+                    <img src="./images/mutton_biriani.png" alt="Mutton Biriani">
+                </div>
+                <div class="food-desc">
+                    <h3>Mutton Biriani</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, voluptate adipisci
+                        pariatur,
+                        aliquam placeat cumque dolor inventore soluta natus quisquam assumenda quae earum ratione velit
+                        vel
+                        culpa praesentium, nemo eligendi.</p>
+                </div>
+            </div>
+            <div class="food">
+                <div class="food-img">
+                    <img src="./images/nwabi_shemai.png" alt="Nwabi Shemai">
+                </div>
+                <div class="food-desc">
+                    <h3>Nawabi Shemai</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, voluptate adipisci
+                        pariatur,
+                        aliquam placeat cumque dolor inventore soluta natus quisquam assumenda quae earum ratione velit
+                        vel
+                        culpa praesentium, nemo eligendi.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
