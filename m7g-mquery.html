@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-7 Responsive Media Query for small, medium and large devices</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .food {
+            border: 2px solid tomato;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .food img {
+            width: 100%;
+        }
+
+        /* smaller devices */
+        @media screen and (max-width:576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* medium devices */
+        @media screen and (min-width:576.01px) and (max-width:999px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 1</h3>
+            <p>Price: $100</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt recusandae quam esse optio odit libero
+                ullam debitis ex quidem nam!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 2</h3>
+            <p>Price: $200</p>
+            <p>Natus, vel? Voluptatem quis culpa voluptatibus assumenda beatae deserunt, expedita nostrum non, ipsa sunt
+                perferendis, hic molestiae modi. Autem, laborum!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 3</h3>
+            <p>Price: $300</p>
+            <p>Quibusdam expedita quia totam nisi commodi quisquam quaerat consequuntur. Unde et quidem recusandae
+                eligendi placeat? Porro sed accusantium distinctio nulla.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 4</h3>
+            <p>Price: $400</p>
+            <p>Minima veniam non a corporis fuga natus accusamus, possimus dignissimos atque asperiores sint, laudantium
+                dolorum tenetur voluptas architecto reprehenderit ad.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 5</h3>
+            <p>Price: $500</p>
+            <p>Minima laudantium rerum illo amet impedit similique cum asperiores vero sunt, placeat exercitationem
+                debitis repudiandae obcaecati. Eveniet explicabo vel unde?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 6</h3>
+            <p>Price: $600</p>
+            <p>Dolor cum iure quaerat sint ad temporibus assumenda non amet magnam aut quos deleniti voluptatum
+                voluptatem, tempore atque expedita. Cumque.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 7</h3>
+            <p>Price: $700</p>
+            <p>Nobis laboriosam mollitia iste quo. Ut, assumenda. Velit, commodi sed esse aliquid quaerat placeat
+                officiis rem odit provident necessitatibus voluptatibus?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 8</h3>
+            <p>Price: $800</p>
+            <p>Enim dolore nulla corporis fugiat nobis odio inventore doloribus nemo quas laboriosam, temporibus
+                dignissimos aut animi hic facilis consequatur! Repellat!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 9</h3>
+            <p>Price: $900</p>
+            <p>Necessitatibus, neque modi placeat veniam numquam doloremque, temporibus nobis dolores minus ipsam ipsum
+                molestiae odio dignissimos in maxime fugiat officiis!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 10</h3>
+            <p>Price: $1000</p>
+            <p>Dolore, nihil, quaerat minima at cupiditate alias rerum voluptatem repellendus, excepturi ab tempore
+                adipisci vitae necessitatibus eius! Minima, animi repellendus.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 11</h3>
+            <p>Price: $1100</p>
+            <p>Facilis doloribus voluptatibus explicabo excepturi tempore. Maiores nemo excepturi, inventore molestias
+                odit doloremque libero accusamus magnam, ab tempore quo error.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/mutton_biriani.png" alt="">
+            <h3>Food Item - 12</h3>
+            <p>Price: $1200</p>
+            <p>Similique itaque, facilis, beatae, quam maiores qui eaque iure quasi blanditiis magnam cum voluptatem
+                cumque molestiae ipsam corporis id saepe!</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-6 Explore Basic Responsiveness using Simple Media query</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .food {
+            border: 2px solid skyblue;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .food img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* simple media query */
+        @media screen and (max-width: 576px){
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <!-- .container>.food*12>img[src="./images/kebab_naan.png"]+h3{food item $}+p{price: \$$00}+p>lorem20 -->
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 1</h3>
+            <p>price: $100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dolorem corporis? Atque officia inventore ad eligendi nulla impedit! Fugit, quo!</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 2</h3>
+            <p>price: $200</p>
+            <p>Culpa blanditiis numquam qui error deleniti quaerat fugiat architecto ducimus? Omnis dolores commodi error voluptates hic nemo, repudiandae explicabo sint.</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 3</h3>
+            <p>price: $300</p>
+            <p>Iure nam repellat molestiae vero dolor numquam soluta architecto fuga atque magnam? Consequuntur quidem eaque, harum similique tenetur ratione repellat.</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 4</h3>
+            <p>price: $400</p>
+            <p>Molestias labore laudantium fugit magni quibusdam eum, voluptates dolor dicta ducimus sapiente voluptate. Distinctio dignissimos obcaecati laborum ipsa, aliquam optio.</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 5</h3>
+            <p>price: $500</p>
+            <p>Magni exercitationem explicabo fuga, in expedita praesentium sint possimus tempora ab doloremque at cum saepe nobis cumque voluptatem harum sequi!</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 6</h3>
+            <p>price: $600</p>
+            <p>Similique temporibus asperiores possimus aliquam hic, quod in optio reiciendis porro culpa rem natus voluptates ratione quidem, ea labore officia.</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 7</h3>
+            <p>price: $700</p>
+            <p>Earum assumenda rerum aut porro animi quo cumque tempore modi quas voluptate, aliquid at blanditiis nemo vel nesciunt voluptates amet.</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 8</h3>
+            <p>price: $800</p>
+            <p>Repudiandae ratione reprehenderit fugit hic natus, temporibus eius nobis cupiditate quo sint cum? Praesentium debitis officiis libero quibusdam aut facilis!</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 9</h3>
+            <p>price: $900</p>
+            <p>Dicta, nobis. Praesentium nemo facilis laboriosam iusto minima delectus, odio nihil illum numquam harum quam magni incidunt rerum, accusantium dolore.</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 10</h3>
+            <p>price: $1000</p>
+            <p>Veniam quae impedit earum a laboriosam sit dolorem necessitatibus aspernatur! Asperiores non amet fugiat officiis necessitatibus, ex impedit maxime deserunt!</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 11</h3>
+            <p>price: $1100</p>
+            <p>Enim cum eveniet consequatur, illo sit mollitia ea praesentium sint, beatae laudantium esse possimus consequuntur labore animi nulla aut fugit!</p>
+        </div>
+        <div class="food">
+            <img src="./images/kebab_naan.png" alt="">
+            <h3>food item 12</h3>
+            <p>price: $1200</p>
+            <p>Quia doloribus non ea recusandae molestias iste nobis, quae inventore ratione dicta dolor commodi asperiores qui? Exercitationem quam ipsam ipsum!</p>
+        </div>
+    </div>
+</body>
+</html>
