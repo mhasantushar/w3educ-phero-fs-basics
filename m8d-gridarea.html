@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-4 Practical Grid area layout and media query</title>
+
+    <style>
+        .header,
+        .nav,
+        .main,
+        .sidebar,
+        .advert,
+        .footer {
+            background-color: beige;
+            border: 1px solid tomato;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .advert {
+            grid-area: advert;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .container {
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+                "header     header      header      header"
+                "nav        main        main        sidebar"
+                "nav        main        main        advert"
+                "footer     footer      footer      footer";
+        }
+
+        .nav ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav a {
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "sidebar"
+                    "advert"
+                    "footer";
+            }
+
+            .nav ul {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container {
+                grid-template-areas:
+                    "header     header      header"
+                    "nav        nav         nav"
+                    "sidebar    main        main"
+                    "advert     footer      footer";
+            }
+
+            .nav ul {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header class="header">
+        <h3>The Header</h3>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href=#>Nav 1</a></li>
+            <li><a href=#>Nav 2</a></li>
+            <li><a href=#>Nav 3</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <article>
+            <h3>Main Article 1</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam debitis corporis pariatur
+                repellendus deserunt quas provident, sequi minima consequatur rerum dolores dicta sed aliquam officiis
+                praesentium perferendis earum beatae voluptate quaerat quasi obcaecati? Cum vel, corrupti sed sunt minus
+                expedita, incidunt quae dolorem nam eligendi praesentium, modi quam saepe?</P>
+        </article>
+        <article>
+            <h3>Main Article 2</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt aliquid tenetur dolore. Sint
+                illo, officia aliquam quo blanditiis voluptate obcaecati, accusantium perferendis, dolor eius ratione
+                iusto! Nostrum tenetur tempora sequi repudiandae laboriosam debitis perspiciatis placeat hic a illo
+                corporis, ratione magnam quibusdam. Incidunt hic eaque possimus dicta iusto itaque!</P>
+        </article>
+    </main>
+
+    <aside>
+        <div class="sidebar">
+            <h4>sidebar</h4>
+        </div>
+    </aside>
+
+    <div class="advert">
+        <h4>advertisement</h4>
+    </div>
+
+    <footer class="footer">
+        <h3>The Footer</h3>
+    </footer>
+</body>
+</html>
