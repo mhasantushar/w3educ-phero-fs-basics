@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-3 CSS3 features and CSS overflow, text-overflow, ellipsis</title>
+
+    <style>
+        .box {
+            width: 300px;
+            border: 2px solid steelblue;
+            height: 300px;
+        }
+
+        #box-1 {
+            overflow: hidden;
+        }
+
+        #box-2 {
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        #box-3 {
+            overflow-y: auto;
+        }
+
+        .ellipsis {
+            width: 200px;
+            border: 2px solid steelblue;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;    /*or, can use "clip" - won't show 3-dots*/
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!-- .box*2>h3{My Text Box $}+p>lorem200 -->
+        <div class="box" id="box-1">
+            <h3>My Text Box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consectetur minima quis cupiditate amet
+                beatae doloribus quae nobis obcaecati blanditiis, et impedit, vel aspernatur ratione ad sunt
+                perspiciatis voluptate iste quasi corporis repellendus distinctio. Quae ullam eligendi a perferendis
+                nostrum eaque deserunt nobis porro tempora, tenetur ab pariatur aliquid similique illo fugit ipsa. Ipsum
+                sint vero accusantium excepturi laborum, a alias molestias soluta aperiam illo incidunt iste quaerat
+                corporis deserunt, accusamus natus ipsam neque rem. Vitae explicabo ducimus possimus repellendus
+                similique eos maiores, voluptates quos temporibus dolorum atque vero soluta accusamus asperiores rerum
+                expedita ipsa earum excepturi sunt delectus. Vitae.</p>
+        </div>
+        <div class="box" id="box-2">
+            <h3>My Text Box 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consectetur minima quis cupiditate amet
+                beatae doloribus quae nobis obcaecati blanditiis, et impedit, vel aspernatur ratione ad sunt
+                perspiciatis voluptate iste quasi corporis repellendus distinctio. Quae ullam eligendi a perferendis
+                nostrum eaque deserunt nobis porro tempora, tenetur ab pariatur aliquid similique illo fugit ipsa. Ipsum
+                sint vero accusantium excepturi laborum, a alias molestias soluta aperiam illo incidunt iste quaerat
+                corporis deserunt, accusamus natus ipsam neque rem. Vitae explicabo ducimus possimus repellendus
+                similique eos maiores, voluptates quos temporibus dolorum atque vero soluta accusamus asperiores rerum
+                expedita ipsa earum excepturi sunt delectus. Vitae.</p>
+        </div>
+        <div class="box" id="box-3">
+            <h3>My Text Box 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consectetur minima quis cupiditate amet
+                beatae doloribus quae nobis obcaecati blanditiis, et impedit, vel aspernatur ratione ad sunt
+                perspiciatis voluptate iste quasi corporis repellendus distinctio. Quae ullam eligendi a perferendis
+                nostrum eaque deserunt nobis porro tempora, tenetur ab pariatur aliquid similique illo fugit ipsa. Ipsum
+                sint vero accusantium excepturi laborum, a alias molestias soluta aperiam illo incidunt iste quaerat
+                corporis deserunt, accusamus natus ipsam neque rem. Vitae explicabo ducimus possimus repellendus
+                similique eos maiores, voluptates quos temporibus dolorum atque vero soluta accusamus asperiores rerum
+                expedita ipsa earum excepturi sunt delectus. Vitae.</p>
+        </div>
+        <div class="box" id="box-2">
+            <h3>My Text Box 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consectetur minima quis cupiditate amet
+                beatae doloribus quae nobis obcaecati blanditiis, et impedit, vel aspernatur ratione ad sunt
+                perspiciatis voluptate iste quasi corporis repellendus distinctio. Quae ullam eligendi a perferendis
+                nostrum eaque deserunt nobis porro tempora, tenetur ab pariatur aliquid similique illo fugit ipsa. Ipsum
+                sint vero accusantium excepturi laborum, a alias molestias soluta aperiam illo incidunt iste quaerat
+                corporis deserunt, accusamus natus ipsam neque rem. Vitae explicabo ducimus possimus repellendus
+                similique eos maiores, voluptates quos temporibus dolorum atque vero soluta accusamus asperiores rerum
+                expedita ipsa earum excepturi sunt delectus. Vitae.</p>
+        </div>
+        <br>
+        <br>
+        <p class="ellipsis" title="I am serious student. I make sure to spend 6-8 hour studying">I am serious student. I make sure to spend 6-8 hour studying</p>
+        <!-- "title" makes sure to show the entire text as abbrebation-->
+    </section>
+</body>
+
+</html>
