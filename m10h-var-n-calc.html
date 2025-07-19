@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-8 (advanced) CSS Custom property and use var, calc</title>
+
+    <style>
+        :root {
+            --primary-color: steelblue;
+            --secondary-color: blue;
+            --copy-font-size: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+        }
+
+        h3 {
+            background-color:var(--primary-color);
+        }
+
+        .box {
+            border: 2px solid var(--secondary-color);
+            width: calc(100% - 400px);
+        }
+
+        p {
+            color: var(--primary-color);
+            font-size: var(--copy-font-size);
+        }
+
+        .container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+            grid-template-rows: 500px;
+        }
+
+        .sidebar {
+            background-color: lightgray;
+        }
+        .content {
+            background-color: lightskyblue;
+        }
+</style>
+</head>
+
+<body>
+    <h1>CSS Variables</h1>
+    <div class="box">
+        <h3>AKA custom property</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium provident minus ex illum quis a
+            praesentium ad pariatur dicta sint!</p>
+    </div>
+    <br>
+    <div class="container">
+        <div class="sidebar">sidebar
+
+        </div>
+        <div class="content">My contents</div>
+    </div>    
+</body>
+
+</html>
