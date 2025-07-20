@@ -21,18 +21,14 @@
             display: flex;
         }
 
-        .blog-image {
-            border: 1px solid tomato;
+        .blog-image,
+        .blog-details {
+            /* border: 1px solid tomato; */
             max-width: 50%;
         }
 
         .blog-image img {
             height: 100%;
-        }
-
-        .blog-details {
-            border: 1px solid tomato;
-            max-width: 50%;
         }
 
         .blog-image img {
@@ -47,6 +43,12 @@
         @media screen and (max-width: 576px) {
             .blog-wrapper {
                 flex-direction: column;
+            }
+
+            .blog-image,
+            .blog-details {
+                /* border: 1px solid tomato; */
+                max-width: 100%;
             }
         }
     </style>
