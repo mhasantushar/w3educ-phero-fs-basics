@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7-HW5</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .blog-wrapper {
+            display: flex;
+        }
+
+        .blog-image {
+            border: 1px solid tomato;
+            max-width: 50%;
+        }
+
+        .blog-image img {
+            height: 100%;
+        }
+
+        .blog-details {
+            border: 1px solid tomato;
+            max-width: 50%;
+        }
+
+        .blog-image img {
+            width: 100%;
+        }
+
+        .disp-reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* ----------------------- */
+        @media screen and (max-width: 576px) {
+            .blog-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="blog-food-section">
+            <article class="blog-wrapper">
+                <figure class="blog-image">
+                    <img src="./images/mutton_biriani.png" alt="Mutton Biriany">
+                </figure>
+                <div class="blog-details">
+                    <h3>Mutton Biriani</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci ab quos nisi, laudantium
+                        ipsam autem voluptate quia eius hic sunt. At, dolorum reiciendis qui dignissimos maiores ut
+                        aliquam,
+                        tempora placeat beatae, quis accusantium? Voluptatum, magnam! Dolores, quod molestiae eum
+                        placeat
+                        sapiente quidem dignissimos, ad aliquid natus autem laboriosam amet!
+                    </p>
+                </div>
+            </article>
+            <article class="blog-wrapper disp-reverse">
+                <figure class="blog-image">
+                    <img src="./images/kebab_naan.png" alt="Naan and Kebab">
+                </figure>
+                <div class="blog-details">
+                    <h3>Naan & Kebab</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci ab quos nisi, laudantium
+                        ipsam autem voluptate quia eius hic sunt. At, dolorum reiciendis qui dignissimos maiores ut
+                        aliquam,
+                        tempora placeat beatae, quis accusantium? Voluptatum, magnam! Dolores, quod molestiae eum
+                        placeat
+                        sapiente quidem dignissimos, ad aliquid natus autem laboriosam amet!
+                    </p>
+                </div>
+            </article>
+            <article class="blog-wrapper">
+                <figure class="blog-image">
+                    <img src="./images/nwabi_shemai.png" alt="Nawabi Shemai">
+                </figure>
+                <div class="blog-details">
+                    <h3>Nawabi Shemai</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero adipisci ab quos nisi, laudantium
+                        ipsam autem voluptate quia eius hic sunt. At, dolorum reiciendis qui dignissimos maiores ut
+                        aliquam, tempora placeat beatae, quis accusantium? Voluptatum, magnam! Dolores, quod molestiae
+                        eum placeat sapiente quidem dignissimos, ad aliquid natus autem laboriosam amet!
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
